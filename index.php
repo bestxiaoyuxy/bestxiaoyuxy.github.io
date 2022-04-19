@@ -137,7 +137,7 @@
     </div>
 
     <!--x悬浮按钮-->
-    <a href="write.html">
+    <a href="write.php">
         <div class="write">
             <div>写留言</div>
         </div>
