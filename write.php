@@ -117,7 +117,7 @@
             <textarea type="text" id="content"/></textarea>
         </div>
         <div align="center">
-            <button onclick="alert(httpGet('send.php?title='+document.getElementById('title').value+'&content='+document.getElementById('content').value))">确定</button>
+            <button onclick="alert(httpGet('send.html?title='+document.getElementById('title').value+'&content='+document.getElementById('content').value))">确定</button>
         </div>
 
 
