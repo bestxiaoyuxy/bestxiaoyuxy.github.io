@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8"/>
     <title>忆光导航单页</title>
@@ -135,76 +134,40 @@
             <div class="list_content"><a href="http://e.17ir.cn/web/album">http://e.17ir.cn/web/album</a></div>
             <div class="list_time">2022.4.19</div> 
             </div>
-        <!--
-        <?php
-        //留言路径
-        $file = 'feedback.txt';
-
-        //判断是否存在
-        if (!is_file($file)) {
-
-            echo '<div align="center">空空如也~</div>';
-
-        } else {
-            //读取文件
-            $message = file_get_contents($file);
-
-            //转化为数组
-            $pieces = explode("<title>", $message);
-            $arrlength = count($pieces);
-
-            for ($x = 1; $x < $arrlength; $x++) {
-
-                $data = $pieces[$x];
-
-                //截取标题
-                $title = strstr($data, '</title>', true);
-
-                //截取内容
-                $content = strstr(strstr($data, "<c>"), "</c>", true);
-
-                //截取评论时间
-                $time = strstr(strstr($data, "<time>"), "</time>", true);
-
-                $content = str_replace("<c>", "", $content);
-
-                $time = str_replace("<time>", "", $time);
-
-                //输出内容
-                echo '
-            <div class="card">
-            <div class="list_title">'.nl2br(htmlentities($title,ENT_QUOTES,"UTF-8")).'</div>
-            <div class="list_content">'.nl2br(htmlentities($content,ENT_QUOTES,"UTF-8")).' </div>
-            <div class="list_time">'.$time.'</div>
-            </div>';
-
-            }
-        }
-        ?>
-       --!>
     </div>
-
-    <!--x悬浮按钮-->
-    <!--改写x悬浮按钮
-    <a href="write.html">
-        <div class="write">
-            <div>写留言</div>
-        </div>
-    </a>
-    -->
-            
     <a href="https://github.com/bestxiaoyuxy/bestxiaoyuxy.github.io/edit/main/index.html">
         <div class="write">
             <div>管理</div>
         </div>
     </a>       
-
-
 </div>
 <!--底部-->
 <script>
 var bg_img=["http://api.btstu.cn/sjbz/zsy.php"];  //这里可以添加图片路径，每个路径用""包起来，每个路径之间用逗号分开，要在英文状态下输入符号。
 document.body.style.background="url("+bg_img[Math.floor(Math.random()*(bg_img.length))]+")";  //设置随机背景图，这里不用改。
 </script>
+<!--樱花-->
+<script type="text/javascript" src="https://www.eray.cc/static/js/yinghua.js"></script>
+<!--樱花-->
+<!--动态彩带-->
+<script type="text/javascript" src="https://www.eray.cc/static/js/dongdai.js"></script>
+<!--动态彩带-->
+<!--动态黑色线条-->
+<script type="text/javascript" src="https://www.eray.cc/static/js/donghei.js"></script>
+<!--动态黑色线条-->
+<!--鼠标跟随小星星-->
+<script type="text/javascript" src="https://www.eray.cc/static/js/moustar.js"></script>
+<!--鼠标跟随小星星-->
+<!-- 看板娘 -->
+    <script src="https://cdn.eray.cc/api/Live2D/live2d.js"></script>
+    <script>
+        aLive2D('Random()', '120px', '220px', 'Rb', '12%', '12%', true)
+    </script>
+    <!--函数说明：
+aLive2D(Model,Width,Height,Position,X,Y,EnableMsg)
+<script src="https://cdn.10086.fund:23350/js/jquery.min.js"></script>
+-->
+<!-- 看板娘 -->
+</body>
 
 </html>
